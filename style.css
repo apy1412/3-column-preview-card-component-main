@@ -1,0 +1,101 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --Bright-orange: hsl(31, 77%, 52%);
+  --Dark-cyan: hsl(184, 100%, 22%);
+  --Very-dark-cyan: hsl(179, 100%, 13%);
+  --font-familyH: "Big Shoulders Display", cursive;
+  --font-familyS: "Lexend Deca", sans-serif;
+  --transparent-white: hsla(0, 0%, 100%, 0.75);
+  --very-light-grey: hsl(0, 0%, 95%);
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  font-size: 1.5rem;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.card img {
+  width: 66px;
+  height: 42px;
+  object-fit: cover;
+}
+
+.container {
+  max-width: 375px;
+  display: flex;
+  flex-direction: column;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding: 4.5rem;
+}
+
+.card p {
+  max-width: 22rem;
+  line-height: 1.6;
+}
+
+.sedans {
+  background-color: var(--Bright-orange);
+}
+.suv {
+  background-color: var(--Dark-cyan);
+}
+
+.luxury {
+  background-color: var(--Very-dark-cyan);
+}
+
+h2 {
+  font-family: "Big Shoulders Display", cursive;
+  font-size: 3.8rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: hsl(0, 0%, 95%);
+}
+p {
+  color: hsla(0, 0%, 100%, 0.75);
+  font-family: var(--font-familyS);
+}
+button {
+  width: 148px;
+  height: 48px;
+  border-radius: 30px;
+  border: 0;
+  font-family: var(--font-familyS);
+  font-weight: bold;
+}
+
+.sedans button {
+  color: var(--Bright-orange);
+}
+
+.suv button {
+  color: var(--Dark-cyan);
+}
+
+.luxury button {
+  color: var(--Very-dark-cyan);
+}
