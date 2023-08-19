@@ -24,13 +24,8 @@ body {
   display: grid;
   place-items: center;
   height: 100vh;
+  width: 100vw;
   font-size: 1.5rem;
-}
-
-img {
-  width: 100%;
-  height: auto;
-  display: block;
 }
 
 .card img {
@@ -49,12 +44,15 @@ img {
   display: flex;
   flex-direction: column;
   gap: 3rem;
-  padding: 4.5rem;
+  padding: 5rem;
+  max-width: 328px;
 }
 
 .card p {
-  max-width: 22rem;
+  max-width: 25rem;
   line-height: 1.6;
+  color: hsla(0, 0%, 100%, 0.65);
+  font-family: var(--font-familyS);
 }
 
 .sedans {
@@ -75,10 +73,7 @@ h2 {
   font-weight: 700;
   color: hsl(0, 0%, 95%);
 }
-p {
-  color: hsla(0, 0%, 100%, 0.75);
-  font-family: var(--font-familyS);
-}
+
 button {
   width: 148px;
   height: 48px;
@@ -98,4 +93,22 @@ button {
 
 .luxury button {
   color: var(--Very-dark-cyan);
+}
+
+button:hover,
+button:active {
+  color: hsla(0, 0%, 100%, 0.65);
+  background: transparent;
+  border: 2px solid hsla(0, 0%, 100%, 0.65);
+}
+
+@media (min-width: 700px) {
+  .container {
+    max-width: 1440px;
+    flex-direction: row;
+  }
+
+  button {
+    margin-top: 5rem;
+  }
 }
